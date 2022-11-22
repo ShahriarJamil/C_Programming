@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+    int a,count,devide,remain=0;
+    scanf("%d",&a);
+    while(2)
+    {
+        if(a%2==0)
+        {
+            devide=a/3;
+            remain=remain+(3*devide);
+            a=(a-(3*devide))+devide;
+            if(a==2)
+            {
+                a=a+1;
+            }
+            if(a==1)
+            {
+                printf("%d\n",remain);
+                break;
+            }
+        }
+        else
+        {
+            devide=a/3;
+            remain=remain+(3*devide);
+            a=(a-(3*devide))+devide;
+            if(a==2)
+            {
+                a=a+1;
+            }
+            if(a==1)
+            {
+                printf("%d\n",remain+1);
+                break;
+            }
+        }
+    }
+    return 0;
+}
